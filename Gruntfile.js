@@ -292,6 +292,10 @@ module.exports = function (grunt) {
             'styles/fonts/{,*/}*.*'
           ]
         }, {
+          src: '<%= config.app %>/php/users.php',
+          dest: '<%= config.dist %>/php/users.php'
+        },
+			   {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
         }]
