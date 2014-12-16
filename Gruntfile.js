@@ -298,6 +298,10 @@ module.exports = function (grunt) {
 			   {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
+        },
+			   {
+          src: '<%= config.app %>/php/emails.php',
+          dest: '<%= config.dist %>/php/emails.php'
         }]
       },
       styles: {

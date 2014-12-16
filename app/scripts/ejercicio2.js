@@ -7,7 +7,7 @@
                         required: true,
                         minlength: 2
                     },
-                    email: "required",
+                    email: {remote:"emails.php"},
                     comentarios: "required"
                 }
                 });
