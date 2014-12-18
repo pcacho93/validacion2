@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+    <title>validacion2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main4.css -->
+    <link rel="stylesheet" href="styles/ejercicio3.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <form id="formulario" novalidate  method="post">
+        <div>
+            <label for="nombre">Nombre:
+                <span class="important">*</span>
+            </label>
+            <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div>
+            <label for="email">E-mail:
+                <span class="important">*</span>
+            </label>
+            <input type="email" id="email" name="email" />
+        </div>
+                <div>
+            <label for="cuenta">Cuenta Bancaria <strong>con IBAN:</strong>
+                
+            </label>
+            <input type="text" id="cuenta" name="cuenta" />
+        </div>
+        <div>
+            <label for="cuenta2">Cuenta Bancaria <strong>sin IBAN:</strong>
+                
+            </label>
+            <input type="text" id="cuenta" name="cuenta2" />
+        </div>
+        <div>
+            <label for="url">Url:</label>
+            <input type="url" id="url" name="url" />
+        </div>
+        <div>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" />
+        </div>
+    </form>
+    <!-- build:js(.) scripts/vendor3.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-validate/dist/jquery.validate.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!-- build:js({app,.tmp}) scripts/main3.js -->
+    <script src="scripts/ibana.js"></script>
+    <script src="scripts/numerocuenta.js"></script>
+    <script src="scripts/ejercicio4.js"></script>
+    <script src="scripts/localization.js"></script>
+    
+
+
+    <!-- endbuild -->
+</body>
+
+</html>
+
+
+<!-- Observaciones: 
+     Por defecto los errores en los formularios se inyectan dentro del código html mediante un contenedor label con class="error", justo a continuación del input que dispara el error.
+     Obsérvalo mediante chrome developer tools o firebug.
+-->
